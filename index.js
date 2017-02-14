@@ -9,7 +9,7 @@ var fs = require('fs');
 var bodyParser = require('body-parser')
 var mongoose = require('mongoose');
 var session = require("express-session");
-
+var port = process.env.PORT || 3000;
 mongoose.connect('mongodb://bojan:bojan.1987@ds139959.mlab.com:39959/aceblog');
 
 app.use(express.static(__dirname + '/public'));
@@ -149,4 +149,6 @@ app.post('/api/images/', function(req, res) {
     res.redirect('/blog');
 });
 
-app.listen(process.env.PORT || 3000);
+app.listen(port, function() {
+    console.log('working')
+});
