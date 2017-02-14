@@ -249,6 +249,10 @@
               justify-content: center;
           }
           
+          .contact a:hover {
+              text-decoration: none;
+          }
+          
           .contact p {
               margin-top: 15px;
               font-family: 'Indie Flower', cursive;
