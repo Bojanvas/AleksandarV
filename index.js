@@ -20,7 +20,7 @@ app.use(cookieParser());
 app.use(passport.initialize());
 app.use(passport.session());
 
-var imgPath = '/path/to/some/img.png';
+
 
 var usersSchema = mongoose.Schema({
     username: String,
