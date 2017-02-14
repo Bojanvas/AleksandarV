@@ -1,0 +1,22 @@
+<div class="location">
+    <div class="locheader">
+        <h4>Portfolio</h4>
+
+        <h6>Home <span>>></span> Portfolio</h6>
+    </div>
+</div>
+<div class="mainport">
+    <div class="released">
+
+        <div class="products" ng-repeat="item in product">
+            <h3>{{item.title}}</h3>
+            <a href="{{item.href}}"><img src="{{item.img}}" alt="{{item.title}}"></a>
+            <div class="background">
+
+                <p>{{item.text}}</p>
+                <!--    <a href="{{item.badge}}"> <img id='badge' src="{{item.google}}" alt="google"></a> -->
+            </div>
+        </div>
+    </div>
+
+</div>

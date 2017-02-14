@@ -1,0 +1,35 @@
+<h2>Post new blog here</h2>
+
+<div class="container">
+    <form action="api/images/" style="margin-top:150px;" method="post" enctype="multipart/form-data">
+        <input type="text" name='title'>
+        <input type="file" name="myFile" class='form-control'>
+
+        <button type="submit" class="btn btn-large btn-block btn-default">Upload Image</button>
+
+    </form>
+    <input ng-model=post.title class='form-control' type="text" placeholder='title'>
+    <input type="text" placeholder='image path' class='form-control' ng-model='post.img'>
+    <textarea ng-model=post.body class='form-control' name="blog" id="blogtext" placeholder='text' cols="30" rows="10"></textarea>
+
+    <button type="button" ng-click='newpost(post)' class="btn btn-large btn-block btn-default">Post</Post>
+    <button type="button" ng-click='update(post)' class="btn btn-large btn-block btn-primary">Update</Post>
+</div>
+<a class= 'btn btn-primary' style= 'margin:20px 0 0 50px;'  href="/logout">Logout</a>
+<div class="location">
+    <div class="locheader">
+
+        <h4>Blog</h4>
+
+        <h6>Home<span>>></span>blog</h6>
+    </div>
+
+</div>
+<div class="blogs" ng-repeat="post in posts">
+
+    <h3 class='blogtext'>{{ post.title }}
+        <a class='pull-right' ng-click="edit(post._id)"><span class = 'glyphicon glyphicon-pencil' ></span></a><a class='pull-right' ng-click='deletepost(post._id)'><span class = 'glyphicon glyphicon-remove' ></span></a></h3>
+    <em>{{post.posted}}</em>
+    <img src="../../uploads/{{post.img}}" alt="">
+    <p class='blogpost'>{{ post.body}}</p>
+</div>
