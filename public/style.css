@@ -568,17 +568,20 @@
               }
               .mimg {
                   margin-top: 101px;
-                  background: url('img/smand.png') center;
+                  background: url('img/andw.png') center;
                   height: 500px;
+              }
+              .mimg h1 {
+                  font-size: 300%;
               }
               .mobileimg {
                   height: 270px;
                   width: 270px;
-                  top: 32%;
-                  left: 10%;
+                  top: 12%;
+                  left: 17%;
               }
               .skilltxt {
-                  font-size: 80%;
+                  font-size: 70%;
               }
               .homewrap .wrap-1 {
                   width: 100%;
@@ -668,7 +671,7 @@
           @media screen and (max-width: 480px) {
               .mimg {
                   margin-top: 101px;
-                  background: url('img/exsand.png') center;
+                  background: url('img/andw.png') center;
                   height: 500px;
               }
               .icon {
