@@ -148,7 +148,27 @@ app.post('/api/images/', function(req, res) {
 
     res.redirect('/blog');
 });
+app.get('/sitemap.xml', function(req, res) {
+    generate(res);
+})
 
+function generate(res) {
+    var urls = ['/#about', '/#portfolio', '/#blog', '/'];
+    var root_path = 'aleksandarvasilevski.com'
+    var priority = 0.5;
+    var freq = 'monthly';
+    var xml = '<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">';
+    for (i in urls) {
+        xml += '<url>';
+        xml += '<loc>' + root_path + urls[i] + '</loc>';
+        xml += '<changefreq>' + freq + '</changefreq>';
+        xml += '<priority>' + priority + '</priority>';
+        xml += '</url>';
+    }
+    xml += '</urlset>';
+    res.header('Content-Type', "text/xml");
+    res.send(xml);
+}
 app.listen(port, function() {
     console.log('working')
 });
