@@ -88,9 +88,19 @@
           .main {}
           
           .mimg {
+              padding: 0.11px;
               margin-top: 101px;
               background: url('img/andw.png') center;
               height: 700px;
+          }
+          
+          .mimg h1 {
+              color: white;
+              text-align: center;
+              margin-top: 8%;
+              font-size: 700%;
+              font-weight: 600;
+              font-family: 'Indie Flower', cursive;
           }
           
           .mobileimg {
@@ -98,7 +108,7 @@
               background-size: contain;
               position: relative;
               left: 41%;
-              top: 40%;
+              top: 10%;
               width: 370px;
               height: 370px;
               display: flex;
@@ -115,6 +125,7 @@
           
           .skl {
               display: none;
+              font-size: 110%;
           }
           
           .icon {
@@ -319,6 +330,11 @@
           
           .mainport .upcoming {
               font-family: Georgia, 'Times New Roman', Times, serif;
+          }
+          
+          .released {
+              text-align: center;
+              font-family: 'Noto Sans', sans-serif;
           }
           
           .products {
