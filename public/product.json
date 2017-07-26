@@ -13,5 +13,13 @@
         "badge": "https://play.google.com/store/apps/details?id=com.aleksandarvasilevski.calculator&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1",
         "href": "https://play.google.com/store/apps/details?id=com.aleksandarvasilevski.notes&hl=en",
         "text": "Notes is a notepad application that allows you to create and organize everyday notes and ideas."
-    }]
+    }, {
+        "title": "My Fitness Trainer",
+        "img": "https://lh3.googleusercontent.com/3sLoYMuWEJ9mGcE_-uW6CTqDh3tcTREHmKmRr6nyvNgYgkj7YfGsyVyCTOxseObr9g=w300-rw",
+        "google": "https://lh3.googleusercontent.com/5exVlM3595b1gfR5tUAH5rTy5VM4QYuIdTIrB2SK9beh4XNBeOpXSNNBDdjGxv9Ao-s=w300-rw",
+        "badge": "https://lh3.googleusercontent.com/3sLoYMuWEJ9mGcE_-uW6CTqDh3tcTREHmKmRr6nyvNgYgkj7YfGsyVyCTOxseObr9g=w300-rw",
+        "href": "https://play.google.com/store/apps/details?id=com.aleksandarvasilevski.myfitnesstrainer",
+        "text": "My Fitness Trainer is a fitness and bodybuilding guide app that will allow you to achieve great workout results within a short period of time, and allows you to workout from gym or home."
+    }
+                ]
 }
