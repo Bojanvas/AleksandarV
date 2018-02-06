@@ -83,6 +83,9 @@ app.get('/loggedin', function(req, res) {
 app.get('/blog/adminblog', auth, function(req, res) {
     res.render('parts/admin');
 })
+app.get('/notes', function(req, res) {
+    res.sendFile(__dirname +'/public/parts/notes.html');
+})
 app.post('/api/post', function(req, res) {
     var post = req.body;
     PostModel
