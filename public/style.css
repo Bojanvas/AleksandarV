@@ -683,3 +683,12 @@
                   top: 56%;
               }
           }
+
+          /* policy */
+          .privacy {
+              width: 80%;
+              margin: 50px auto;
+          }
+          .privacy h3{
+              text-align: center;
+          }

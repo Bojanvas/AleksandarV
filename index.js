@@ -86,6 +86,9 @@ app.get('/blog/adminblog', auth, function(req, res) {
 app.get('/notes', function(req, res) {
     res.sendFile(__dirname +'/public/parts/notes.html');
 })
+app.get('/notes/privacy_policy', function(req, res) {
+    res.sendFile(__dirname +'/public/parts/policy.html');
+})
 app.post('/api/post', function(req, res) {
     var post = req.body;
     PostModel
